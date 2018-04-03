@@ -34,142 +34,281 @@
     <link rel="stylesheet" href="/app.css">
 
     <style type="text/css">
-      body.status-page {
-        background-color: #f0f3f4;
-        color: #333333;
-      }
-      p,
-      strong {
-        color: #333333 !important;
-      }
-      .reds {
-        color: #ff2222 !important;
-      }
-      .blues {
-        color: #3498db !important;
-      }
-      .greens {
-        color: #7ed321 !important;
-      }
-      .yellows {
-        color: #f7ca18 !important;
-      }
-      .oranges {
-        color: #ff8800 !important;
-      }
-      .metrics {
-        color: #0dccc0 !important;
-      }
-      .links {
-        color: #7ed321 !important;
-      }
+    body.status-page {
+    background-color: #212327;
+    color: #ffffff;
+    }
+p, strong { color: #ffffff !important; }
+.reds { color: #ff6f6f !important; }
+.blues { color: #3498db !important; }
+.greens { color: #7ed321 !important; }
+.yellows { color: #f7ca18 !important; }
+.oranges { color: #ff8800 !important; }
+.metrics { color: #0dccc0 !important; }
+.links { color: #7ed321 !important; }
 
-      /**
+/**
  * Banner background
  */
-      .app-banner {
-        background-color: !important;
-      }
+.app-banner {
+    background-color:  !important;
+}
 
-      .app-banner-padding {
-        padding: 40px 0 !important;
-      }
+.app-banner-padding {
+    padding: 40px 0 !important;
+}
 
-      /**
+/**
  * Alert overrides.
  */
-      .alert {
-        background-color: #f7ca18;
-        border-color: #deb515;
-        color: white;
-      }
-      .alert.alert-success {
-        background-color: #7ed321;
-        border-color: #71bd1d;
-        color: white;
-      }
-      .alert.alert-info {
-        background-color: #3498db;
-        border-color: #2e88c5;
-        color: white;
-      }
-      .alert.alert-danger {
-        background-color: #ff2222;
-        border-color: #e51e1e;
-        color: white;
-      }
+.alert {
+    background-color: #f7ca18;
+    border-color: #deb515;
+    color: white;
+}
+.alert.alert-success {
+    background-color: #7ed321;
+    border-color: #71bd1d;
+    color: white;
+}
+.alert.alert-info {
+    background-color: #3498db;
+    border-color: #2e88c5;
+    color: white;
+}
+.alert.alert-danger {
+    background-color: #ff6f6f;
+    border-color: #e56363;
+    color: white;
+}
 
-      /**
+/**
  * Button Overrides
  */
-      .btn.links {
-        color: #ac8d10;
-      }
-      .btn.btn-success {
-        background-color: #7ed321;
-        border-color: #71bd1d;
-        color: white;
-      }
-      .btn.btn-success.links {
-        color: #589317;
-      }
-      .btn.btn-success.btn-outline {
-        background-color: transparent;
-        border-color: #7ed321;
-        color: #7ed321;
-      }
-      .btn.btn-success.btn-outline:hover {
-        background-color: #7ed321;
-        border-color: #71bd1d;
-        color: white;
-      }
-      .btn.btn-info {
-        background-color: #3498db;
-        border-color: #2e88c5;
-        color: white;
-      }
-      .btn.btn-info.links {
-        color: #246a99;
-      }
-      .btn.btn-danger {
-        background-color: #ff2222;
-        border-color: #e51e1e;
-        color: white;
-      }
-      .btn.btn-danger.links {
-        color: #b21717;
-      }
+.btn.links {
+    color: #ac8d10;
+}
+.btn.btn-success {
+    background-color: #7ed321;
+    border-color: #71bd1d;
+    color: white;
+}
+.btn.btn-success.links {
+    color: #589317;
+}
+.btn.btn-success.btn-outline {
+    background-color: transparent;
+    border-color: #7ed321;
+    color: #7ed321;
+}
+.btn.btn-success.btn-outline:hover {
+    background-color: #7ed321;
+    border-color: #71bd1d;
+    color: white;
+}
+.btn.btn-info {
+    background-color: #3498db;
+    border-color: #2e88c5;
+    color: white;
+}
+.btn.btn-info.links {
+    color: #246a99;
+}
+.btn.btn-danger {
+    background-color: #ff6f6f;
+    border-color: #e56363;
+    color: white;
+}
+.btn.btn-danger.links {
+    color: #b24d4d;
+}
 
-      /**
+/**
  * Background fills Overrides
  */
-      .component {
-        background-color: #ffffff;
-        border-color: #e5e5e5;
-      }
-      .sub-component {
-        background-color: #ffffff;
-        border-color: #e5e5e5;
-      }
-      .incident {
-        background-color: #ffffff;
-        border-color: #e5e5e5;
-      }
-      .status-icon {
-        background-color: #ffffff;
-        border-color: #e5e5e5;
-      }
-      .panel.panel-message:before {
-        border-left-color: #ffffff !important;
-        border-right-color: #ffffff !important;
-      }
-      .panel.panel-message:after {
-        border-left-color: #ffffff !important;
-        border-right-color: #ffffff !important;
-      }
-      .footer a {
-        color: #333333;
-      }
+.component {
+    background-color: #333333;
+    border-color: #2d2d2d;
+}
+.sub-component {
+    background-color: #333333;
+    border-color: #2d2d2d;
+}
+.incident {
+    background-color: #333333;
+    border-color: #2d2d2d;
+}
+.status-icon {
+    background-color: #333333;
+    border-color: #2d2d2d;
+}
+.panel.panel-message:before {
+    border-left-color: #333333 !important;
+    border-right-color: #333333 !important;
+}
+.panel.panel-message:after {
+    border-left-color: #333333 !important;
+    border-right-color: #333333 !important;
+}
+.footer a {
+    color: #ffffff;
+}
+/**
+ * Dark theme overrides
+ */
+ body.status-page .list-group .list-group-item.group-name
+  {
+    background-color: #607D8B;
+  }
+
+  body.status-page .list-group.components
+  {
+    border-color: #455A64;
+  }
+
+  body.status-page .list-group .list-group-item
+  {
+    border-color: #11171A;
+  }
+
+  body.status-page .list-group .list-group-item
+  {
+    background-color: #37474F;
+  }
+
+  body.status-page .list-group.components a
+  {
+    color: #ECEFF1 !important;
+  }
+
+  body.status-page .timeline .moment .status-icon
+  {
+    background: #11171A;
+    font-size: 16px;
+    text-align: center;
+    line-height: 31px;
+    border-color: #607D8B;
+    border-width: 2px;
+  }
+
+  body.status-page .timeline .moment .status-icon.status-1
+  {
+    background: #F44336;
+  }
+
+  body.status-page .timeline .moment .status-icon.status-2
+  {
+    background: #FFC107;
+  }
+
+  body.status-page .timeline .moment .status-icon.status-3
+  {
+    background: #03A9F4;
+  }
+
+  body.status-page .timeline .moment .status-icon.status-4
+  {
+    background: #1DE9B6;
+  }
+
+  body.status-page .timeline .moment::before
+  {
+    background: #607D8B;
+  }
+
+  body.status-page .timeline .moment .status-icon .icon
+  {
+    position: initial;
+    color: #000 !important;
+  }
+
+  body.status-page .timeline .moment .panel-message.list-group.components, body.status-page .timeline .moment .panel.panel-message, .incident
+  {
+    background-color: #37474F;
+    border-color: #455A64;
+  }
+
+  .btn.btn-default
+  {
+    background: transparent;
+    color: #B0BEC5;
+    border-color: #607D8B;
+  }
+
+  .btn.btn-default:hover
+  {
+    background: #546E7A;
+    color: #FFF;
+    border-color: #607D8B;
+  }
+
+  .btn.btn-danger
+  {
+    background: transparent;
+    color: #F44336;
+    border-color: #607D8B;
+  }
+
+  .btn.btn-danger:hover
+  {
+    background: #F44336;
+    color: #FFF;
+    border-color: #607D8B;
+  }
+
+  body.status-page .timeline .moment .status-icon.status-1 .icon:before
+  {
+    content: "" !important;
+  }
+
+  body.status-page .timeline .moment .status-icon.status-3 .icon:before
+  {
+    content: "" !important;
+  }
+
+  .alert.alert-success
+  {
+    color: #000;
+  }
+
+  .group-toggle
+  {
+    display: none;
+  }
+
+  body.status-page .timeline .moment:last-child::before
+  {
+    height: 48px;
+  }
+
+  body.status-page .timeline .moment:first-child::before
+  {
+    top: 48px;
+  }
+
+  body.status-page .timeline .moment:only-child::before
+  {
+    display: none;
+  }
+
+  .panel.panel-message::before
+  {
+    border-left-color: #455A64 !important;
+    border-right-color: #455A64 !important;
+    left: 0px !important;
+  }
+
+  .panel.panel-message::after
+  {
+    border-left-color: #37474F !important;
+    border-right-color: #37474F !important;
+  }
+
+  a
+  {
+    color: #00ffcc;
+  }
+}
     </style>
 
     <script type="text/javascript">
