@@ -1,0 +1,17 @@
+Service status
+
+<%=
+serviceTable = TTY::Table.new header: ['Server', 'Service', 'Status', 'Last check', 'Response time']
+serviceRows  = []
+  @content.each do |serverName, services|
+    services.each do |serviceName, serviceData|
+      serviceTable << [
+        serverName,
+        serviceName,
+        serviceData['status'],
+        "#{(Time.now - serviceData['lastCheck']).floor} sec ago",
+        "#{serviceData['responseTime']} ms"
+      ]
+  end
+end
+serviceTable.render(:ascii) %>
