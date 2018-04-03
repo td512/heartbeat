@@ -184,7 +184,7 @@
       <div class="section-messages"></div>
 
       <div class="section-status">
-        <div class="alert alert-success">All systems are operational</div>
+        <div class="alert alert-info" id="banner"></div>
       </div>
 
       <div class="about-app">
@@ -204,6 +204,10 @@
               <% if serviceData['status'] == "Major Outage" && @color != "reds"
                    @color = "reds"
                    @statusText = "Major Outage"
+                 end
+                 if serviceData['status'] == "Major Outage" && @service_color != "alert-danger"
+                   @service_color = "alert-danger"
+                   @bannerText = "Some systems are experiencing a major outage"
                  end %>
                  <% end %>
               <i class="ion ion-ios-circle-filled text-component-1 <%= @color %>" data-toggle="tooltip" title="<%= @statusText %>"></i>
@@ -247,5 +251,11 @@
       </div>
     </footer>
 
+    <script>
+      var color = "<%= @service_color %>"
+      var text = "<%= @bannerText %>"
+      $('#banner').html(text)
+      $('#banner').removeClass("alert-info").addClass(color)
+    </script>
   </body>
 </html>
