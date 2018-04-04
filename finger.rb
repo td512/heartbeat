@@ -9,18 +9,18 @@ require 'tty-table'
 service = gets.chomp
 service = service.split('@').first if service.include?('@')
 
-serviceTable = TTY::Table.new header: ['Server', 'Service', 'Status', 'Last check', 'Response time']
-@content.each do |serverName, services|
-  services.each do |serviceName, serviceData|
-    next unless serverName.casecmp(service.downcase).zero? ||
-                (service == 'all') || (service == '') || serverName.downcase.include?(service.downcase)
-    serviceTable << [
-      serverName,
-      serviceName,
-      serviceData['status'],
-      "#{(Time.now - serviceData['lastCheck']).floor} sec ago",
-      "#{serviceData['responseTime']} ms"
+service_table = TTY::Table.new header: ['Server', 'Service', 'Status', 'Last check', 'Response time']
+@content.each do |server_name, services|
+  services.each do |service_name, service_data|
+    next unless serverName.downcase.include?(service.downcase) ||
+                (service == 'all') || (service == '')
+    service_table << [
+      server_name,
+      service_name,
+      service_data['status'],
+      "#{(Time.now - service_data['lastCheck']).floor} sec ago",
+      "#{service_data['responseTime']} ms"
     ]
   end
 end
-puts serviceTable.render(:ascii)
+puts service_table.render(:ascii)
