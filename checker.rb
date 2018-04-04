@@ -3,7 +3,7 @@
 require 'yaml'
 require './checker_services.rb'
 
-services     = YAML.load_file('services.yaml')
+services     = YAML.load_file(File.join(__dir__, '/services.yaml'))
 service_list = []
 thread_list  = []
 results      = {}
